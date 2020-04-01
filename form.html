@@ -13,7 +13,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--close">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="#">Фото и видео</a>
@@ -43,7 +43,77 @@
         </li>
       </ul>
     </section>
-    <!--Секция "формы и отзывы"-->
+    <section class="review">
+      <h2 class="visually-hidden">Форма заполнения отзыва</h2>
+      <div class="review__wrapper">
+          <h3 class="review__title">Оставьте свой отзыв</h3>
+          <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <form class="review__form" action="https://echo.htmlacademy.ru" id="review" name="review" method="POST">
+            <div class="review__full-name introduce">
+              <h3 class="review__title">Представьтесь:</h3>
+              <label class="introduce__label" for="first-name" required>Имя*:</label>
+              <input class="introduce__input" id="first-name" type="text" name="first-name" placeholder="Петр">
+              <label class="introduce__label" for="last-name" required>Фамилия*:</label>
+              <input class="introduce__input" id="last-name" type="text" name="last-name" placeholder="Иванов">
+              <label class="introduce__label" for="middle-name">Отчество:</label>
+              <input class="introduce__input" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
+            </div>
+            <div class="review__tel-mail contact">
+              <h3 class="review__title">Контактная информация:</h3>
+              <label class="contact__label" for="tel">Контактный телефон*:</label>
+              <div class="contact__wrapper-input">
+                <input class="contact__input" id="tel" type="tel" name="tel" required>
+                <div class="contact__input-button">
+                  <svg class="contact__input-button-svg contact__input-button-svg--tel" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                    <g id="Page-1">
+                      <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                        <g id="phone" transform="translate(85.000000, 126.000000)">
+                          <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                        </g>
+                      </g>
+                    </g>
+                 </svg>
+                </div>
+              </div>
+              <label class="contact__label" for="email">Электронная почта*:</label>
+              <div class="contact__wrapper-input">
+                <input class="contact__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                <div class="contact__input-button">
+                  <svg class="contact__input-button-svg contact__input-button-svg--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="review__like impression">
+              <h3 class="review__title">Ваше общее впечатление:</h3>
+              <label class="impression__label" for="pozitive">Скорее положительное</label>
+              <input class="impression__input impression__input--icon" type="radio" id="pozitive" name="impression" value="pozitive" checked>
+              <label class="impression__label" for="negative">Скорее отрицательное</label>
+              <input class="impression__input impression__input--icon" type="radio" id="negative" name="impression" value="negative">
+              <label class="impression__label" for="dont-know">Затрудняюсь ответить</label>
+              <input class="impression__input impression__input--icon" type="radio" id="dont-know" name="impression" value="dont-know">
+            </div>
+            <div class="review__visited places">
+              <h3 class="review__title">Посещенные достопримечательности:</h3>
+              <label class="places__label" for="bridge-devil">Мост Дьявола</label>
+              <input class="places__input places__input--icon" type="checkbox" id="bridge-devil" name="places" value="Мост-Дьявола" checked>
+              <label class="places__label" for="mountain-bell">Гора-Колокол</label>
+              <input class="places__input places__input--icon" type="checkbox" id="mountain-bell" name="places" value="Гора-Колокол" checked>
+              <label class="places__label" for="slide-park">Слайд-парк</label>
+              <input class="places__input places__input--icon" type="checkbox" id="slide-park" name="places" value="Слайд-парк" checked>
+              <label class="places__label" for="red-rocks">Слайд-парк</label>
+              <input class="places__input places__input--icon" type="checkbox" id="red-rocks" name="places" value="Красные скалы">
+            </div>
+            <div class="review__describe emotions">
+              <h3 class="review__title">Опишите свои эмоции:</h3>
+              <label class="emotions__label visually-hidden" for="emotions-textarea">Поле для описания эмоций от посещения достопримечательностей</label>
+              <textarea class="emotions__textarea" id="emotions-textarea" name="emotions-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+            <button class="review__button" type="submit">Отправить отзыв</button>
+          </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
