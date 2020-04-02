@@ -1,4 +1,6 @@
 @import "page-header.scss"
+@tomato: red;
+
 body {
-  background: #ffffff;
+  background-color: @tomato;
 }
