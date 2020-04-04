@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="source/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -111,7 +112,19 @@
         </li>
       </ul>
     </section>
-    <!--Секция "заинтересовались?"-->
+    <section class="interested">
+      <h2 class="visually-hidden">Переход на поиск гостиницы</h2>
+      <h3 class="interested__title">Заинтересовались?</h3>
+      <p class="interested__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="interested__link-find-hotel" href="search-hotel.html">Найти гостиницу</a>
+      <div class="interested__wrapper map">
+        <img class="map__image" src="source/img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта месторасположения">
+        <svg class="map__marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+          <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+          <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+        </svg>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
