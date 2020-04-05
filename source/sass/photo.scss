@@ -1,0 +1,45 @@
+.photo-head {
+  min-height: 158px;
+  background-position: 50% 100%;
+}
+
+.page-photo {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo-cards {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-cards__item {
+  text-align: left;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__author {
+  font-size: 14px;
+  color: #333333;
+}
+
+.card__count {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 14px;
+}
+
+.card__like-icon {
+  opacity: 0.3;
+}

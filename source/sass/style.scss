@@ -6,6 +6,9 @@
 @import "intro.scss";
 @import "interested.scss";
 @import "footer.scss";
+@import "photo.scss";
+@import "presentation.scss";
+@import "form.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -16,6 +19,21 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 280px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 15px 0;
+  margin-bottom: 41px;
+  border: none;
 }
 
 .visually-hidden {

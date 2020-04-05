@@ -51,6 +51,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  min-height: 389px;
 }
 
 .mountain__welcome {
@@ -59,4 +60,10 @@
 
 .mountain__triangle {
   transform: translateX(70px);
+  margin-top: auto;
+}
+
+.mountain__sedona {
+  transform: scale(0.5);
+  align-self: flex-end;
 }

@@ -5,16 +5,30 @@
   flex-wrap: wrap;
 }
 
+.intro {
+  margin: 0 auto;
+  width: 270px;
+}
+
 .intro__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
+}
+
+.intro__item {
+  width: 270px;
 }
 
 .intro__h1 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro__h2 {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,4 +40,3 @@
   text-transform: uppercase;
   color: #333333;
 }
-
