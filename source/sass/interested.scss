@@ -1,0 +1,44 @@
+.interested {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.interested__wrapper {
+  padding: 0 20px;
+}
+
+.interested__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.interested__text {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.interested__link {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 280px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 15px 0;
+  margin-bottom: 41px;
+}
+
+.interested__map {
+  position: relative;
+}
+
+.map__marker {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 161px;
+  left: 146px;
+}

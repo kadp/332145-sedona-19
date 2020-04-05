@@ -1,0 +1,62 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  background-color: tomato;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  background-color: yellow;
+}
+
+.site-list__link {
+  background-color: #81b3d2;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo__city-of-sedona {
+  position: relative;
+  z-index: 30;
+}
+
+.mountain {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -28px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.mountain__welcome {
+  transform: scale(0.5);
+}
+
+.mountain__triangle {
+  transform: translateX(70px);
+}
