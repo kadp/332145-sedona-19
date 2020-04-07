@@ -1,0 +1,17 @@
+.site-list__item {
+  background-color: yellow;
+}
+
+.site-list__link {
+  background-color: #81b3d2;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}

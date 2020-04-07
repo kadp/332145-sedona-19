@@ -1,29 +1,29 @@
-.grey {
+.short-list {
   width: 280px;
   margin: 0 auto;
   background-color: #eeeeee;
 }
 
-.grey__list {
+.short__list {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-.grey__item {
+.short__item {
   text-transform: uppercase;
 }
 
-.grey__title {
+.short__title {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
   margin: 0;
 }
 
-.grey__number,
-.grey__description {
+.short__number,
+.short__description {
   font-size: 14px;
   color: #333333;
 }

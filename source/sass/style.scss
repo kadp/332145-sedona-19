@@ -1,14 +1,26 @@
 @charset "utf-8";
+@import "page-main.scss";
 @import "fonts.scss";
 @import "reason.scss";
-@import "grey.scss";
+@import "about-city.scss";
+@import "short.scss";
 @import "header.scss";
 @import "intro.scss";
 @import "interested.scss";
+@import "map-marker.scss";
 @import "footer.scss";
 @import "photo.scss";
+@import "card.scss";
 @import "presentation.scss";
+@import "video-player.scss";
 @import "form.scss";
+@import "mountain.scss";
+@import "logo.scss";
+@import "site-list.scss";
+@import "main-nav.scss";
+@import "page-footer-social.scss";
+@import "social-list.scss";
+@import "copyright.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;

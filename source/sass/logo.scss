@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo__city-of-sedona {
+  position: relative;
+  z-index: 30;
+}
