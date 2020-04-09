@@ -1,0 +1,23 @@
+.reason__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #81b3d2;
+}
+
+.reason__item {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reason__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reason__number,
+.reason__description {
+  font-size: 14px;
+}

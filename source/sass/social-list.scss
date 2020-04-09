@@ -1,0 +1,21 @@
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  display: flex;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link path {
+  fill: #ffffff;
+}
