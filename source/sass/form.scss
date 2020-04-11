@@ -1,25 +1,6 @@
-@mixin big {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-@mixin up {
-  text-transform: uppercase;
-}
-
-@mixin text {
-  font-size: 14px;
-  color: #333333;
-}
-
 .review {
   width: 280px;
   margin: 0 auto;
-}
-
-.review__text {
-  width: 276px;
-  text-align: center;
 }
 
 .review__title,
@@ -28,42 +9,139 @@
 .impression__title,
 .places__title,
 .emotions__title {
-  @include big;
-  @include up;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.review__text,
-.introduce__label,
-.contacts__label {
-  @include text;
-  @include up;
+.review__text {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.impression__label,
 .places__label {
-  @include big;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.introduce__input::placeholder,
 .contacts__input::placeholder,
 .emotions__textarea::placeholder {
-  @include big;
+  font-size: 18px;
+  font-weight: 700;
   color: #000000;
 }
 
+.introduce__input {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 22px;
+  flex-grow: 1;
+}
+
+.introduce__input::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.introduce__label {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden; /*Как избежать?*/
+}
+
+.introduce__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contacts__input {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 22px;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
 .emotions__textarea {
-  width: 280px;
+  width: 236px;
   height: 160px;
   background-color: #f2f2f2;
-  padding: 0;
+  padding: 22px;
   border: none;
+  margin-bottom: 51px;
 }
 
 .impression__wrapper,
-.place__wrapper {
+.places__wrapper {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: baseline;
+  margin-bottom: 52px;
+}
+
+.contacts__wrapper-input {
+  display: flex;
+}
+
+.contacts__input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.contacts__label {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  margin-left: 22px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.impression__input {
+  margin-right: 43px;
+}
+
+.impression__label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.impression {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.places__input {
+  margin-right: 43px;
+}
+
+.places {
+  border-bottom: 1px solid #f2f2f2;
 }
