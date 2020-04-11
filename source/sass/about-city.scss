@@ -20,3 +20,27 @@
   font-size: 14px;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .about-city__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-city__item {
+    text-align: center;
+    width: 165px;
+  }
+
+  .about-city__item--food {
+    order: 2;
+  }
+
+  .about-city__item--home {
+    order: 1;
+  }
+
+  .about-city__item--souvenirs {
+    order: 3;
+  }
+}

@@ -1,24 +1,52 @@
 .mountain {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: -28px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 50%;
   background-repeat: no-repeat;
-  min-height: 389px;
+  position: relative;
+  min-height: 158px;
+  background-position: 50% 100%;
 }
 
 .mountain__welcome {
-  transform: scale(0.5);
+  transform: scale(0.6);
 }
 
 .mountain__triangle {
-  transform: translateX(70px);
-  margin-top: auto;
+  min-height: 26px;
+  width: 320px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
 }
 
 .mountain__sedona {
+  margin-top: 52px;
   transform: scale(0.5);
-  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .mountain {
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .mountain__welcome {
+    margin-top: 77px;
+    transform: scale(1);
+    margin-bottom: 34px;
+  }
+
+  .mountain__sedona {
+    margin-top: 94px;
+    transform: scale(1);
+    margin-bottom: 58px;
+  }
+
+  .mountain__triangle {
+    min-height: 57px;
+    width: 768px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
 }

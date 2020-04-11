@@ -12,7 +12,7 @@
 @import "photo.scss";
 @import "card.scss";
 @import "presentation.scss";
-@import "video-player.scss";
+@import "volume.scss";
 @import "form.scss";
 @import "mountain.scss";
 @import "logo.scss";
@@ -21,6 +21,9 @@
 @import "page-footer-social.scss";
 @import "social-list.scss";
 @import "copyright.scss";
+@import "page-form.scss";
+@import "video-controls.scss";
+@import "variables.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -31,6 +34,18 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: rgb(7, 87, 206);
+  }
 }
 
 .button {

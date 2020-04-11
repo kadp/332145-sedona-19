@@ -14,25 +14,6 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.volume__scale {
-  position: absolute;
-  width: 235px;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
-  top: 22px;
-  left: 22px;
-}
-
-.volume__slider {
-  position: absolute;
-  width: 11px;
-  height: 10px;
-  top: 18px;
-  left: 57px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
 .video-controls__buttons {
   width: 280px;
   min-height: 66px;
