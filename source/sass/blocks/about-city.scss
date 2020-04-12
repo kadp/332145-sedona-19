@@ -30,17 +30,17 @@
   .about-city__item {
     text-align: center;
     width: 165px;
-  }
 
-  .about-city__item--food {
-    order: 2;
-  }
+    &--food {
+      order: 2;
+    }
 
-  .about-city__item--home {
-    order: 1;
-  }
+    &--home {
+      order: 1;
+    }
 
-  .about-city__item--souvenirs {
-    order: 3;
+    &--souvenirs {
+      order: 3;
+    }
   }
 }
