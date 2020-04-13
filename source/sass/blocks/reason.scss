@@ -21,3 +21,23 @@
 .reason__description {
   font-size: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .reason {
+    margin: 0 auto;
+  }
+
+  .reason__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .reason__item:nth-child(2n + 1) {
+    width: 162px;
+    padding: 47px;
+  }
+
+  .reason__item svg {
+    display: none;
+  }
+}

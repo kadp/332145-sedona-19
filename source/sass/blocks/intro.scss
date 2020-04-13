@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .intro {
   margin: 0 auto;
   width: 270px;
@@ -8,10 +10,6 @@
   margin: 0;
   list-style: none;
   text-align: center;
-}
-
-.intro__item {
-  width: 270px;
 }
 
 .intro__title {
@@ -32,4 +30,10 @@
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-width: 490px;
+  }
 }

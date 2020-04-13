@@ -1,26 +1,29 @@
 @charset "utf-8";
-@import "page-main.scss";
+@import "blocks/page-main.scss";
 @import "fonts.scss";
-@import "reason.scss";
-@import "about-city.scss";
-@import "short.scss";
-@import "header.scss";
-@import "intro.scss";
-@import "interested.scss";
-@import "map-marker.scss";
-@import "footer.scss";
-@import "photo.scss";
-@import "card.scss";
-@import "presentation.scss";
-@import "video-player.scss";
-@import "form.scss";
-@import "mountain.scss";
-@import "logo.scss";
-@import "site-list.scss";
-@import "main-nav.scss";
-@import "page-footer-social.scss";
-@import "social-list.scss";
-@import "copyright.scss";
+@import "blocks/reason.scss";
+@import "blocks/about-city.scss";
+@import "blocks/short.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/interested.scss";
+@import "blocks/map-marker.scss";
+@import "blocks/footer.scss";
+@import "blocks/photo.scss";
+@import "blocks/card.scss";
+@import "blocks/presentation.scss";
+@import "blocks/volume.scss";
+@import "blocks/form.scss";
+@import "blocks/mountain.scss";
+@import "blocks/logo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer-social.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-form.scss";
+@import "blocks/video-controls.scss";
+@import "variables.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -31,6 +34,18 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: rgb(7, 87, 206);
+  }
 }
 
 .button {
