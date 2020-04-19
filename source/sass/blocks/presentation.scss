@@ -18,3 +18,19 @@
   font-size: 14px;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    width: $tablet-width;
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    width: $desktop-width;
+  }
+}

@@ -21,3 +21,10 @@
 .interested__map {
   position: relative;
 }
+
+@media (min-width: $tablet-width) {
+  .interested__text {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+}

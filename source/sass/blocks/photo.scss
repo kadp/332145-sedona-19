@@ -18,8 +18,16 @@
   text-align: left;
 }
 
-@media (min-width: 768px) {
-  .photo-head {
-    min-height: 290px;
+@media (min-width: $tablet-width) {
+  .page-photo,
+  .photo-cards {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo,
+  .photo-cards {
+    width: $desktop-width;
   }
 }

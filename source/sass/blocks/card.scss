@@ -18,3 +18,10 @@
 .card__like-icon {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .card__count-like {
+    align-self: flex-end;
+    margin-top: -32px;
+  }
+}

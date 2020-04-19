@@ -10,3 +10,18 @@
   margin: 41px 0;
   display: inline-block;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    width: $tablet-width;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+}

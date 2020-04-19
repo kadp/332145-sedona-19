@@ -19,3 +19,13 @@
 .social__link path {
   fill: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    justify-content: center;
+  }
+
+  .social__item:nth-child(2) {
+    margin: 0 6px;
+  }
+}

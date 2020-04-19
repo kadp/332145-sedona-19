@@ -1,9 +1,3 @@
-.short-list {
-  width: 280px;
-  margin: 0 auto;
-  background-color: #eeeeee;
-}
-
 .short__list {
   margin: 0;
   padding: 0;
@@ -26,4 +20,10 @@
 .short__description {
   font-size: 14px;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .short__list {
+    display: flex;
+  }
 }

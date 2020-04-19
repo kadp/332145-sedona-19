@@ -1,0 +1,30 @@
+@media (min-width: $tablet-width) {
+  .photo-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .photo-cards__item {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    flex-grow: 1;
+  }
+
+  .photo-cards__item:nth-child(1) {
+    background-color: yellowgreen;
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-cards__list {
+    width: $desktop-width;
+  }
+
+  .photo-cards__item:nth-child(1) {
+    background-color: rgb(171, 255, 4);
+    width: $desktop-width;
+  }
+}

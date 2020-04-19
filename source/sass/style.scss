@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "variables.scss";
 @import "blocks/page-main.scss";
 @import "fonts.scss";
 @import "blocks/reason.scss";
@@ -23,7 +24,7 @@
 @import "blocks/copyright.scss";
 @import "blocks/page-form.scss";
 @import "blocks/video-controls.scss";
-@import "variables.scss";
+@import "blocks/photo-cards-list.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -36,16 +37,12 @@ img {
   height: auto;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    background-color: purple;
-  }
+.hide {
+  display: none;
 }
 
-@media (min-width: $desktop-width) {
-  body {
-    background-color: rgb(7, 87, 206);
-  }
+.show {
+  display: flex;
 }
 
 .button {
@@ -61,6 +58,22 @@ img {
   padding: 15px 0;
   margin-bottom: 41px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-color: purple;
+  }
+
+  .button {
+    width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: rgb(7, 87, 206);
+  }
 }
 
 .visually-hidden {
