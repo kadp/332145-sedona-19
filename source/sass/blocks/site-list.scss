@@ -12,6 +12,16 @@
   text-transform: uppercase;
 }
 
+.site-list__toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 23px;
+  height: 23px;
+  fill: #ffffff;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .site-list {
     display: flex;
@@ -31,16 +41,4 @@
     cursor: pointer;
     text-transform: uppercase;
   }
-  /*
-  .site-list__item:nth-child(1),
-  .site-list__item:nth-child(2) {
-    margin-left: -40px;
-    background-color: palevioletred;
-  }
-
-  .site-list__item:nth-child(3),
-  .site-list__item:nth-child(4) {
-    margin-right: -40px;
-    background-color: palevioletred;
-  }*/
 }

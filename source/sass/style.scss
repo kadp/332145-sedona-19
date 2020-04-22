@@ -30,6 +30,8 @@ body {
   font-family: "PTSans", "Arial", sans-serif;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -61,18 +63,14 @@ img {
 }
 
 @media (min-width: $tablet-width) {
-  body {
-    background-color: purple;
-  }
-
   .button {
     width: 458px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    background-color: rgb(7, 87, 206);
+  .button {
+    width: 470px;
   }
 }
 

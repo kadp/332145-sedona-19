@@ -2,12 +2,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.about-city__item {
-  width: 210px;
-  text-transform: uppercase;
-  text-align: left;
+  position: relative;
+  margin-left: 75px;
+  margin-top: 30px;
 }
 
 .about-city__title {
@@ -19,6 +16,55 @@
 .about-city__description {
   font-size: 14px;
   color: #333333;
+}
+
+.about-city__item {
+  width: 210px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+
+  &--food::before {
+    content: "";
+    width: 76px;
+    height: 69px;
+    position: absolute;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    fill: #81b3d2;
+    transform: scale(0.5);
+    top: -30px;
+    left: -75px;
+  }
+
+  &--home::before {
+    content: "";
+    width: 75px;
+    height: 73px;
+    position: absolute;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    fill: #81b3d2;
+    transform: scale(0.5);
+    top: -30px;
+    left: -75px;
+  }
+
+  &--souvenirs::before {
+    content: "";
+    width: 63px;
+    height: 75px;
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    fill: #81b3d2;
+    transform: scale(0.5);
+    top: -30px;
+    left: -75px;
+  }
 }
 
 @media (min-width: $tablet-width) {
