@@ -1,25 +1,25 @@
+.about-city {
+  margin-bottom: 45px;
+}
+
 .about-city__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   position: relative;
-  margin-left: 75px;
-  margin-top: 30px;
 }
 
 .about-city__title {
   font-size: 18px;
   font-weight: 700;
-  margin: 0;
+  margin-top: 41px;
 }
 
 .about-city__description {
   font-size: 14px;
   color: #333333;
+  padding-right: 20px;
 }
 
 .about-city__item {
-  width: 210px;
+  margin-left: 70px;
   text-transform: uppercase;
   text-align: left;
   position: relative;
@@ -32,7 +32,6 @@
     background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    fill: #81b3d2;
     transform: scale(0.5);
     top: -30px;
     left: -75px;
@@ -46,7 +45,6 @@
     background-image: url("../img/icon-house.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    fill: #81b3d2;
     transform: scale(0.5);
     top: -30px;
     left: -75px;
@@ -60,33 +58,79 @@
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    fill: #81b3d2;
     transform: scale(0.5);
     top: -30px;
-    left: -75px;
+    left: -70px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .about-city {
+    margin-bottom: 0;
+  }
+
   .about-city__list {
     display: flex;
     justify-content: space-around;
   }
 
+  .about-city__title {
+    margin-top: 110px;
+  }
+
+  .about-city__description {
+    padding: 0;
+  }
+
   .about-city__item {
+    margin-left: 0;
     text-align: center;
-    width: 165px;
+    padding: 40px 40px;
 
     &--food {
       order: 2;
+    }
+
+    &--food::before {
+      transform: scale(1);
+      top: 63px;
+      left: 92px;
     }
 
     &--home {
       order: 1;
     }
 
+    &--home::before {
+      transform: scale(1);
+      top: 57px;
+      left: 91px;
+    }
+
     &--souvenirs {
       order: 3;
+    }
+
+    &--souvenirs::before {
+      transform: scale(1);
+      top: 60px;
+      left: 91px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-city__item {
+    &--food::before {
+      left: 168px;
+    }
+
+    &--home::before {
+      left: 164px;
+    }
+
+    &--souvenirs::before {
+      left: 156px;
     }
   }
 }

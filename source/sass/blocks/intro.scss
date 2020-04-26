@@ -1,14 +1,11 @@
-@import "variables.scss";
-
 .intro {
-  margin: 0 auto;
-  width: 270px;
+  margin-left: 32px;
+  margin-right: 33px;
+  margin-top: 43px;
+  margin-bottom: 10px;
 }
 
 .intro__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   text-align: center;
 }
 
@@ -17,23 +14,32 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-}
-
-.intro__h2 {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
+  padding: 0;
+  padding-bottom: 44px;
 }
 
 .intro__text {
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-width: 490px;
+    margin-left: 139px;
+    margin-right: 139px;
+    margin-top: 51px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-left: 355px;
+    margin-right: 355px;
+    margin-top: 51px;
+    margin-bottom: 55px;
   }
 }
