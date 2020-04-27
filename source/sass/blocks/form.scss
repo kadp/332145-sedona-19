@@ -50,6 +50,13 @@
   line-height: 26px;
 }
 
+.introduce__wrapper input::placeholder {
+  font-size: 26px;
+  font-weight: 700;
+  color: red;
+  line-height: 26px;
+}
+
 .introduce__label {
   font-size: 14px;
   color: #333333;
