@@ -1,6 +1,7 @@
 .interested {
   text-align: center;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .interested__wrapper {
@@ -8,6 +9,7 @@
 }
 
 .interested__title {
+  margin-top: 31px;
   font-size: 21px;
   font-weight: 700;
 }
@@ -16,8 +18,49 @@
   font-size: 14px;
   color: #333333;
   margin-bottom: 40px;
+  line-height: 24px;
+}
+
+.interested__link {
+  margin-bottom: 49px;
+  width: 280px;
 }
 
 .interested__map {
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .interested__text {
+    margin: 0 150px;
+    margin-bottom: 47px;
+  }
+
+  .interested__text span {
+    display: table;
+  }
+
+  .interested__title {
+    margin-top: 57px;
+  }
+
+  .interested__link {
+    width: 458px;
+    margin-bottom: 58px;
+  }
+
+  .interested__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interested__text {
+    margin: 0 150px;
+    margin-bottom: 52px;
+  }
+
+  .interested__link {
+    margin-bottom: 66px;
+  }
 }

@@ -1,0 +1,50 @@
+.travel {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.travel__title {
+  margin-top: 44px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.travel__text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 24px;
+  margin: 0 24px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .travel__title {
+    margin-top: 76px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .travel__text {
+    margin: 0 161px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel__title {
+    margin-top: 113px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .travel__text {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  .travel__text span {
+    display: table;
+  }
+}

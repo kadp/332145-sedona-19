@@ -5,3 +5,15 @@
   top: 161px;
   left: 146px;
 }
+
+@media (min-width: $tablet-width) {
+  .map__marker {
+    left: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__marker {
+    left: 586px;
+  }
+}

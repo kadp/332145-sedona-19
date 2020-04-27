@@ -1,10 +1,18 @@
+.social {
+  margin-bottom: 40px;
+}
+
 .social__list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 40px;
+}
+
+.social__item:nth-child(2) {
+  margin: 0 6px;
 }
 
 .social__link {
@@ -18,4 +26,10 @@
 
 .social__link path {
   fill: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    justify-content: center;
+  }
 }

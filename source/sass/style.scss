@@ -1,6 +1,7 @@
 @charset "utf-8";
-@import "blocks/page-main.scss";
 @import "fonts.scss";
+@import "variables.scss";
+@import "blocks/page-main.scss";
 @import "blocks/reason.scss";
 @import "blocks/about-city.scss";
 @import "blocks/short.scss";
@@ -23,12 +24,14 @@
 @import "blocks/copyright.scss";
 @import "blocks/page-form.scss";
 @import "blocks/video-controls.scss";
-@import "variables.scss";
+@import "blocks/travel.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -36,16 +39,12 @@ img {
   height: auto;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    background-color: purple;
-  }
+.hide {
+  display: none;
 }
 
-@media (min-width: $desktop-width) {
-  body {
-    background-color: rgb(7, 87, 206);
-  }
+.show {
+  display: flex;
 }
 
 .button {
@@ -53,14 +52,24 @@ img {
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
-  width: 280px;
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
   padding: 15px 0;
-  margin-bottom: 41px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 470px;
+  }
 }
 
 .visually-hidden {

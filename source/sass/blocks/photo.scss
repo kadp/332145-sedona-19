@@ -4,22 +4,60 @@
 }
 
 .photo-cards {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-}
-
-.photo-cards__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .photo-cards__item {
   text-align: left;
+  margin: 0 20px;
+  border-bottom: 1px solid grey;
 }
 
-@media (min-width: 768px) {
-  .photo-head {
-    min-height: 290px;
+@media (min-width: $tablet-width) {
+  .page-photo,
+  .photo-cards {
+    width: $tablet-width;
+  }
+
+  .photo-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+  }
+
+  .photo-cards__item {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    border-bottom: none;
+    background-color: #f2f2f2;
+    margin: 0;
+    width: 323px; /*как обойтись без width, flex-grow:1; как быть с последним элементом? .photo-cards__item:last-child {???}*/
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+  }
+
+  .photo-cards__item:nth-child(1) {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo,
+  .photo-cards {
+    width: $desktop-width;
+  }
+
+  .photo-cards__list {
+    margin: 0;
+  }
+
+  .photo-cards__item:nth-child(1) {
+    width: $desktop-width;
   }
 }

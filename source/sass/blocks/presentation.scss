@@ -6,6 +6,7 @@
 }
 
 .presentation__title {
+  margin-top: 39px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -17,4 +18,39 @@
   text-align: center;
   font-size: 14px;
   color: #333333;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    width: $tablet-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation__title {
+    margin-top: 68px;
+    font-size: 30px;
+  }
+
+  .presentation__text {
+    width: 415px;
+    margin-bottom: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    width: $desktop-width;
+  }
+
+  .presentation__title {
+    margin-top: 72px;
+  }
+
+  .presentation__text {
+    margin-bottom: 76px;
+  }
 }
