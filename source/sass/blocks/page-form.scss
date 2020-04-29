@@ -4,3 +4,16 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    width: $tablet-width;
+    background-color: indianred;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    width: $desktop-width;
+  }
+}

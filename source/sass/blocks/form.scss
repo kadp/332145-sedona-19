@@ -33,13 +33,13 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .introduce__input {
   border: none;
   background-color: #f2f2f2;
-  padding: 22px;
+  height: 56px;
+  padding-left: 22px;
   flex-grow: 1;
   font-size: 18px;
   font-weight: 700;
@@ -51,7 +51,6 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .introduce__label {
@@ -79,13 +78,13 @@
 .contacts__input {
   border: none;
   background-color: #f2f2f2;
-  padding: 22px;
+  height: 56px;
+  padding-left: 22px;
   flex-grow: 1;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .emotions__textarea {
@@ -98,7 +97,6 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .impression__wrapper,
@@ -159,4 +157,216 @@
 
 .places {
   border-bottom: 1px solid #f2f2f2;
+}
+
+.review__button {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 648px;
+    text-align: center;
+
+    &__introduce {
+      order: 2;
+    }
+
+    &__contacts {
+      order: 3;
+    }
+
+    &__impression {
+      order: 1;
+    }
+
+    &__places {
+      order: 4;
+    }
+
+    &__emotions {
+      order: 5;
+    }
+
+    &__button {
+      order: 6;
+    }
+  }
+
+  .introduce {
+    width: 323px;
+    background-color: red;
+
+    &__title {
+      margin-bottom: 48px;
+      margin-left: 58px;
+      text-align: left;
+    }
+
+    &__wrapper {
+      margin-left: 58px;
+    }
+  }
+
+  .contacts {
+    background-color: tomato;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      right: 0;
+    }
+
+    &__label {
+      align-self: flex-start;
+    }
+  }
+
+  .places {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+
+    &__title {
+      margin: 0 148px;
+      margin-bottom: 65px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 18px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 18px;
+      right: 0;
+    }
+
+    &__wrapper {
+      width: 50%;
+    }
+
+    &__label {
+      margin-left: 50px;
+    }
+  }
+
+  .impression {
+    width: 323px;
+    background-color: red;
+
+    &__wrapper {
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      margin-bottom: 62px;
+    }
+  }
+
+  .emotions {
+    margin-top: 40px;
+    position: relative;
+
+    &__title {
+      font-size: 21px;
+      width: 648px;
+      margin-bottom: 60px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      right: 0;
+    }
+  }
+
+  .emotions__wrapper {
+    display: flex;
+  }
+
+  .emotions__textarea {
+    width: 100%;
+  }
+
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .review__title {
+    margin-top: 71px;
+    font-size: 30px;
+  }
+
+  .review__text {
+    width: 439px;
+    display: inline-block;
+    margin-bottom: 66px;
+  }
+
+  .review__button::before {
+    content: "* — обязательные поля";
+    position: absolute;
+    bottom: 17px;
+    right: 0;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 960px;
+  }
 }
