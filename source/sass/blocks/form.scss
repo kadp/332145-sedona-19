@@ -81,7 +81,6 @@
   height: 56px;
   padding-left: 22px;
   flex-grow: 1;
-  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
@@ -132,6 +131,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -194,13 +194,14 @@
   }
 
   .introduce {
-    width: 323px;
-    background-color: red;
+    border: none;
+    width: 50%;
 
     &__title {
       margin-bottom: 48px;
       margin-left: 58px;
       text-align: left;
+      font-size: 21px;
     }
 
     &__wrapper {
@@ -209,10 +210,10 @@
   }
 
   .contacts {
-    background-color: tomato;
     width: 100%;
     position: relative;
     margin-top: 30px;
+    border: none;
 
     &__title {
       font-size: 21px;
@@ -244,6 +245,7 @@
   }
 
   .places {
+    border: none;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +255,7 @@
     &__title {
       margin: 0 148px;
       margin-bottom: 65px;
+      font-size: 21px;
     }
 
     &__title::before {
@@ -285,8 +288,8 @@
   }
 
   .impression {
-    width: 323px;
-    background-color: red;
+    border: none;
+    width: 50%;
 
     &__wrapper {
       margin-bottom: 60px;
@@ -294,16 +297,17 @@
 
     &__title {
       margin-bottom: 62px;
+      font-size: 21px;
     }
   }
 
   .emotions {
+    width: 100%;
     margin-top: 40px;
     position: relative;
 
     &__title {
       font-size: 21px;
-      width: 648px;
       margin-bottom: 60px;
     }
 
@@ -339,7 +343,6 @@
   .review__form {
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
     position: relative;
     margin-bottom: 50px;
   }
@@ -368,5 +371,104 @@
 @media (min-width: $desktop-width) {
   .review {
     width: 960px;
+  }
+
+  .impression {
+    &__wrapper {
+      margin-left: 70px;
+    }
+
+    &__title {
+      margin-left: 42px;
+    }
+  }
+
+  .introduce {
+    &__title {
+      margin-left: 129px;
+    }
+
+    &__wrapper {
+      margin-left: 129px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__title {
+      width: 100%;
+      margin-bottom: 87px;
+    }
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      width: 50%;
+    }
+
+    &__wrapper-input {
+      width: 316px;
+    }
+
+    &__label {
+      align-self: center;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 16px;
+    }
+
+    &__label span {
+      display: none;
+    }
+  }
+
+  .places {
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &__title {
+      width: 100%;
+      margin: 0 273px;
+      margin-bottom: 50px;
+    }
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
+
+    &__wrapper {
+      width: 25%;
+      justify-content: space-around;
+    }
+
+    &__label {
+      margin-left: 50px;
+    }
+  }
+
+  .emotions {
+    margin-top: 0;
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
   }
 }
