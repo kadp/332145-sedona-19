@@ -190,6 +190,7 @@
 
     &__button {
       order: 6;
+      width: 324px;
     }
   }
 
@@ -371,6 +372,10 @@
 @media (min-width: $desktop-width) {
   .review {
     width: 960px;
+  }
+
+  &__button {
+    width: 470px;
   }
 
   .impression {

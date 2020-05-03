@@ -25,6 +25,7 @@
 @import "blocks/page-form.scss";
 @import "blocks/video-controls.scss";
 @import "blocks/travel.scss";
+@import "blocks/message.scss";
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -45,31 +46,6 @@ img {
 
 .show {
   display: flex;
-}
-
-.button {
-  display: inline-block;
-  vertical-align: middle;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
-  padding: 15px 0;
-  border: none;
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    width: 324px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button {
-    width: 470px;
-  }
 }
 
 .visually-hidden {
