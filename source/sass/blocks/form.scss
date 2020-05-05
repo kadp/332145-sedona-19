@@ -101,10 +101,9 @@
 .impression__wrapper,
 .places__wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: baseline;
   margin-bottom: 52px;
+  margin-left: 30px;
 }
 
 .contacts__wrapper-input {
@@ -149,10 +148,11 @@
 
 .impression {
   border-bottom: 1px solid #f2f2f2;
+  position: relative;
 }
 
-.places__input {
-  margin-right: 43px;
+.places__wrapper {
+  position: relative;
 }
 
 .places {
@@ -161,6 +161,85 @@
 
 .review__button {
   width: 280px;
+}
+
+.impression__input:checked,
+.impression__input:not(:checked),
+.places__input:checked,
+.places__input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.impression__input:checked + .impression__label,
+.impression__input:not(:checked) + .impression__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+}
+
+.impression__input:checked + .impression__label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.impression__input:not(:checked) + .impression__label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.places__input:checked + .places__label,
+.places__input:not(:checked) + .places__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.places__input:checked + .places__label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+}
+
+.places__input:hover:checked + .places__label::before,
+.places__input:hover:not(:checked) + .places__label::before {
+  opacity: 1;
+}
+
+.places__input:not(:checked) + .places__label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  opacity: 0.8;
 }
 
 @media (min-width: $tablet-width) {
@@ -281,6 +360,7 @@
 
     &__wrapper {
       width: 50%;
+      margin-left: 0;
     }
 
     &__label {
@@ -294,6 +374,7 @@
 
     &__wrapper {
       margin-bottom: 60px;
+      margin-left: 0;
     }
 
     &__title {
