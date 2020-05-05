@@ -33,13 +33,13 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .introduce__input {
   border: none;
   background-color: #f2f2f2;
-  padding: 22px;
+  height: 56px;
+  padding-left: 22px;
   flex-grow: 1;
   font-size: 18px;
   font-weight: 700;
@@ -51,7 +51,6 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .introduce__label {
@@ -79,13 +78,12 @@
 .contacts__input {
   border: none;
   background-color: #f2f2f2;
-  padding: 22px;
+  height: 56px;
+  padding-left: 22px;
   flex-grow: 1;
-  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .emotions__textarea {
@@ -98,16 +96,14 @@
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-  line-height: 26px;
 }
 
 .impression__wrapper,
 .places__wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: baseline;
   margin-bottom: 52px;
+  margin-left: 30px;
 }
 
 .contacts__wrapper-input {
@@ -134,6 +130,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -151,12 +148,413 @@
 
 .impression {
   border-bottom: 1px solid #f2f2f2;
+  position: relative;
 }
 
-.places__input {
-  margin-right: 43px;
+.places__wrapper {
+  position: relative;
 }
 
 .places {
   border-bottom: 1px solid #f2f2f2;
+}
+
+.review__button {
+  width: 280px;
+}
+
+.impression__input:checked,
+.impression__input:not(:checked),
+.places__input:checked,
+.places__input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.impression__input:checked + .impression__label,
+.impression__input:not(:checked) + .impression__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+}
+
+.impression__input:checked + .impression__label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.impression__input:not(:checked) + .impression__label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.places__input:checked + .places__label,
+.places__input:not(:checked) + .places__label {
+  display: inline-block;
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.places__input:checked + .places__label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+}
+
+.places__input:hover:checked + .places__label::before,
+.places__input:hover:not(:checked) + .places__label::before {
+  opacity: 1;
+}
+
+.places__input:not(:checked) + .places__label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 648px;
+    text-align: center;
+
+    &__introduce {
+      order: 2;
+    }
+
+    &__contacts {
+      order: 3;
+    }
+
+    &__impression {
+      order: 1;
+    }
+
+    &__places {
+      order: 4;
+    }
+
+    &__emotions {
+      order: 5;
+    }
+
+    &__button {
+      order: 6;
+      width: 324px;
+    }
+  }
+
+  .introduce {
+    border: none;
+    width: 50%;
+
+    &__title {
+      margin-bottom: 48px;
+      margin-left: 58px;
+      text-align: left;
+      font-size: 21px;
+    }
+
+    &__wrapper {
+      margin-left: 58px;
+    }
+  }
+
+  .contacts {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    border: none;
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      right: 0;
+    }
+
+    &__label {
+      align-self: flex-start;
+    }
+  }
+
+  .places {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+
+    &__title {
+      margin: 0 148px;
+      margin-bottom: 65px;
+      font-size: 21px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 18px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 18px;
+      right: 0;
+    }
+
+    &__wrapper {
+      width: 50%;
+      margin-left: 0;
+    }
+
+    &__label {
+      margin-left: 50px;
+    }
+  }
+
+  .impression {
+    border: none;
+    width: 50%;
+
+    &__wrapper {
+      margin-bottom: 60px;
+      margin-left: 0;
+    }
+
+    &__title {
+      margin-bottom: 62px;
+      font-size: 21px;
+    }
+  }
+
+  .emotions {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+
+    &__title {
+      font-size: 21px;
+      margin-bottom: 60px;
+    }
+
+    &__title::before {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      left: 0;
+    }
+
+    &__title::after {
+      content: "";
+      width: 124px;
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 31px;
+      right: 0;
+    }
+  }
+
+  .emotions__wrapper {
+    display: flex;
+  }
+
+  .emotions__textarea {
+    width: 100%;
+  }
+
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .review__title {
+    margin-top: 71px;
+    font-size: 30px;
+  }
+
+  .review__text {
+    width: 439px;
+    display: inline-block;
+    margin-bottom: 66px;
+  }
+
+  .review__button::before {
+    content: "* — обязательные поля";
+    position: absolute;
+    bottom: 17px;
+    right: 0;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 960px;
+  }
+
+  &__button {
+    width: 470px;
+  }
+
+  .impression {
+    &__wrapper {
+      margin-left: 70px;
+    }
+
+    &__title {
+      margin-left: 42px;
+    }
+  }
+
+  .introduce {
+    &__title {
+      margin-left: 129px;
+    }
+
+    &__wrapper {
+      margin-left: 129px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__title {
+      width: 100%;
+      margin-bottom: 87px;
+    }
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      width: 50%;
+    }
+
+    &__wrapper-input {
+      width: 316px;
+    }
+
+    &__label {
+      align-self: center;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 16px;
+    }
+
+    &__label span {
+      display: none;
+    }
+  }
+
+  .places {
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &__title {
+      width: 100%;
+      margin: 0 273px;
+      margin-bottom: 50px;
+    }
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
+
+    &__wrapper {
+      width: 25%;
+      justify-content: space-around;
+    }
+
+    &__label {
+      margin-left: 50px;
+    }
+  }
+
+  .emotions {
+    margin-top: 0;
+
+    &__title::before {
+      width: 280px;
+    }
+
+    &__title::after {
+      width: 280px;
+    }
+  }
 }
