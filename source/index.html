@@ -101,7 +101,11 @@
             <span class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</span>
           </li>
           <li class="reason__item">
-            <img class="reason__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
+              <img class="reason__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Фото города Седона">
+            </picture>
           </li>
         </ul>
       </div>
@@ -129,7 +133,11 @@
             <span class="reason__description">Да, по нему можно пройти! если вы осмелитесь, конечно</span>
           </li>
           <li class="reason__item">
-            <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
+              <img class="reason__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Фото города Седона">
+            </picture>
           </li>
         </ul>
       </div>
@@ -160,7 +168,11 @@
         <a class="interested__link button" href="search-hotel.html">Найти гостиницу</a>
       </div>
       <div class="interested__map map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта месторасположения">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" alt="Карта месторасположения">
+        </picture>
         <svg class="map__marker" xmlns="http://www.w3.org/2000/svg" width="27" height="27"> <circle fill="#FFF" cx="13.5" cy="13.5" r="13.5" /> <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361" /></svg>
       </div>
     </section>

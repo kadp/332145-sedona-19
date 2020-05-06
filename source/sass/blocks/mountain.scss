@@ -4,6 +4,13 @@
   align-items: center;
   justify-content: space-between;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 1536px auto;
+    background-position: 50% 100%;
+  }
+
   background-repeat: no-repeat;
   position: relative;
   min-height: 158px;
@@ -26,9 +33,14 @@
   transform: scale(0.5);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .mountain {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
   }
 
   .mountain__welcome {
@@ -47,5 +59,22 @@
     min-height: 57px;
     width: 768px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mountain {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
+
+    &__triangle {
+      min-height: 57px;
+      width: 1200px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 }
