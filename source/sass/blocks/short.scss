@@ -5,13 +5,32 @@
 
 .short__item {
   text-transform: uppercase;
-  padding: 32px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 27px;
+  position: relative;
+}
+
+.short__item:nth-child(1)::after,
+.short__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  bottom: 0;
+  left: 20px;
 }
 
 .short__title {
   font-size: 18px;
   font-weight: 700;
   margin: 0;
+}
+
+.short__title:nth-child(1) {
+  margin-top: -3px;
 }
 
 .short__number {
@@ -22,6 +41,7 @@
 .short__description {
   font-size: 14px;
   color: #333333;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,6 +64,11 @@
   .short__item {
     margin-top: 18px;
     margin-bottom: 17px;
+  }
+
+  .short__item:nth-child(1)::after,
+  .short__item:nth-child(2)::after {
+    display: none;
   }
 }
 

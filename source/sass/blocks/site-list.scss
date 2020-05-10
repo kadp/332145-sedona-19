@@ -55,7 +55,6 @@
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
-    width: 100%;
   }
 
   .site-list__link {
@@ -68,5 +67,18 @@
     align-items: center;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  .site-list__toggle {
+    display: none;
+  }
+
+  .site-list__item {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .site-list__item::after {
+    display: none;
   }
 }

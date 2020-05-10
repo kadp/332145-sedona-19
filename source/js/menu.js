@@ -2,6 +2,9 @@ var listCloseButton = document.querySelector(".site-list__toggle");
 var listMenuButton = document.querySelector(".logo__menu");
 var listState = document.querySelector(".main-nav__list");
 
+listCloseButton.classList.remove("no-js");
+listMenuButton.classList.remove("no-js");
+
 listCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   listState.classList.add("hide");

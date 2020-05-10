@@ -9,9 +9,19 @@
 }
 
 .photo-cards__item {
+  position: relative;
   text-align: left;
   margin: 0 20px;
-  border-bottom: 1px solid grey;
+}
+
+.photo-cards__item::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: -20px;
 }
 
 @media (min-width: $tablet-width) {

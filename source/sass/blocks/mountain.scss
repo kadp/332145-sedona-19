@@ -7,17 +7,28 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
+    background-position: center bottom;
+    background-size: 1536px auto;
   }
 
   background-repeat: no-repeat;
   position: relative;
-  background-position: 50% 30%;
+  background-position: center bottom;
+}
+
+.mountain--main-page {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-size: cover;
+    background-position: 50% 30%;
+  }
+
+  margin-bottom: 6px;
 }
 
 .mountain__welcome {
   margin-top: 20px;
   transform: scale(0.6);
+  margin-bottom: -6px;
 }
 
 .mountain__triangle {
@@ -28,8 +39,9 @@
 }
 
 .mountain__sedona {
-  margin-top: 52px;
+  margin-top: 30px;
   transform: scale(0.5);
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {

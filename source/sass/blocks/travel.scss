@@ -1,11 +1,12 @@
 .travel {
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .travel__title {
-  margin-top: 44px;
-  margin-bottom: 20px;
+  margin-top: 41px;
+  margin-bottom: 33px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -13,12 +14,16 @@
 .travel__text {
   font-size: 14px;
   color: #333333;
-  line-height: 24px;
+  line-height: 21px;
   margin: 0 24px;
   margin-bottom: 33px;
 }
 
 @media (min-width: $tablet-width) {
+  .travel {
+    border-bottom: none;
+  }
+
   .travel__title {
     margin-top: 76px;
     font-size: 30px;

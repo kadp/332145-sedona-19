@@ -1,18 +1,33 @@
 .review {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 38px;
 }
 
-.review__title,
-.introduce__title,
-.contacts__title,
-.impression__title,
-.places__title,
 .emotions__title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 27px;
+}
+
+.introduce__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.review__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 41px;
+  margin-bottom: 29px;
 }
 
 .review__text {
@@ -21,11 +36,18 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 24px;
+  position: relative;
+  margin-bottom: 21px;
 }
 
-.places__label {
-  font-size: 18px;
-  font-weight: 700;
+.review__text::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: -18px;
+  left: -20px;
 }
 
 .contacts__input::placeholder,
@@ -45,34 +67,47 @@
   font-weight: 700;
   color: #000000;
   line-height: 26px;
+  width: 100%;
 }
 
 .introduce__input::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+  padding-top: 2px;
 }
 
 .introduce__label {
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .introduce {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  border-bottom: 1px solid #f2f2f2;
-  overflow: hidden; /*Как избежать?*/
+  justify-content: center;
+  position: relative;
+}
+
+.review__introduce::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: -7px;
+  left: -20px;
 }
 
 .introduce__wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  width: 100%;
 }
 
 .contacts__input {
@@ -88,22 +123,15 @@
 
 .emotions__textarea {
   width: 236px;
-  height: 160px;
+  height: 121px;
   background-color: #f2f2f2;
-  padding: 22px;
+  padding: 21px;
   border: none;
-  margin-bottom: 51px;
+  margin-bottom: 48px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
-}
-
-.impression__wrapper,
-.places__wrapper {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 52px;
-  margin-left: 30px;
+  line-height: 24px;
 }
 
 .contacts__wrapper-input {
@@ -123,44 +151,113 @@
   font-size: 14px;
   color: #333333;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   margin-left: 22px;
+  margin-top: 11px;
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .contacts {
-  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.contacts__title {
+  margin-top: 27px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: -7px;
+  left: -20px;
 }
 
 .impression__input {
   margin-right: 43px;
 }
 
-.impression__label {
+.impression__title {
   font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 30px;
 }
 
 .impression {
-  border-bottom: 1px solid #f2f2f2;
   position: relative;
+  padding-bottom: 4px;
+}
+
+.impression::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: -7px;
+  left: -20px;
+}
+
+.impression__wrapper {
+  display: flex;
+  margin-bottom: 23px;
 }
 
 .places__wrapper {
-  position: relative;
+  display: flex;
+}
+
+.places__wrapper:last-child {
+  margin-bottom: -8px;
 }
 
 .places {
-  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.places__title {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+}
+
+.places::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: -7px;
+  left: -20px;
 }
 
 .review__button {
   width: 280px;
+}
+
+.impression__label {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 13px 0;
 }
 
 .impression__input:checked,
@@ -175,17 +272,17 @@
 .impression__input:not(:checked) + .impression__label {
   display: inline-block;
   position: relative;
-  padding-left: 34px;
+  padding-left: 78px;
   cursor: pointer;
 }
 
 .impression__input:checked + .impression__label::before {
   content: "";
   position: absolute;
-  left: -36px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: 0;
+  top: -4px;
+  width: 56px;
+  height: 56px;
   background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -196,10 +293,10 @@
 .impression__input:not(:checked) + .impression__label::before {
   content: "";
   position: absolute;
-  left: -36px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: 0;
+  top: -4px;
+  width: 56px;
+  height: 56px;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
@@ -208,17 +305,21 @@
 .places__input:not(:checked) + .places__label {
   display: inline-block;
   position: relative;
-  padding-left: 38px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 18px;
+  padding-left: 79px;
+  margin-bottom: 42px;
 }
 
 .places__input:checked + .places__label::before {
   content: "";
   position: absolute;
-  left: -24px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: -1px;
+  top: -17px;
+  width: 56px;
+  height: 56px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -234,15 +335,24 @@
 .places__input:not(:checked) + .places__label::before {
   content: "";
   position: absolute;
-  left: -24px;
-  top: -12px;
-  width: 46px;
-  height: 46px;
+  left: -1px;
+  top: -17px;
+  width: 56px;
+  height: 56px;
   background-color: #f2f2f2;
   opacity: 0.8;
 }
 
 @media (min-width: $tablet-width) {
+  .impression::after,
+  .places::after,
+  .introduce::after,
+  .emotions::after,
+  .review__text::after,
+  .contacts::after {
+    display: none;
+  }
+
   .review {
     width: 648px;
     text-align: center;
