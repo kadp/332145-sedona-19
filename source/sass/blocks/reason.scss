@@ -39,7 +39,7 @@
 }
 
 .reason__wrapper:nth-of-type(3) .reason__description {
-  line-height: 22px;
+  line-height: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,23 +61,37 @@
 
   .reason__list {
     display: flex;
-    align-items: center;
   }
 
   .reason__item:nth-child(2n + 1) {
-    width: 162px;
-    padding: 62px 47px;
-    line-height: 21px;
+    width: 256px;
   }
 
   .reason__item svg {
     display: none;
   }
 
-  .reason__title,
+  .reason__title {
+    font-size: 21px;
+    margin-top: 46px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    line-height: 26px;
+  }
+
+  .reason__title span {
+    display: block;
+  }
+
+  .reason__number {
+    margin-top: 12px;
+  }
+
   .reason__description {
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
+    margin-left: 29px;
+    margin-right: 29px;
   }
 }
 

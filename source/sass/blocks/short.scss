@@ -53,17 +53,25 @@
   .short__description {
     display: inline-block;
     margin: 0 14px;
+    margin-top: 10px;
     line-height: 21px;
   }
 
   .short__title {
     display: inline-block;
     margin: 0 26px;
+    font-size: 21px;
   }
 
   .short__item {
     margin-top: 18px;
     margin-bottom: 17px;
+    width: 33%;
+  }
+
+  .short__item:nth-child(2) .short__description {
+    margin: 0 24px;
+    margin-top: 10px;
   }
 
   .short__item:nth-child(1)::after,

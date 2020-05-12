@@ -32,16 +32,18 @@
 
 @media (min-width: $tablet-width) {
   .interested__text {
-    margin: 0 150px;
-    margin-bottom: 47px;
+    line-height: 24px;
+    margin-bottom: 43px;
   }
 
   .interested__text span {
-    display: table;
+    display: block;
+    margin: 0 auto;
   }
 
   .interested__title {
-    margin-top: 57px;
+    margin-top: 52px;
+    font-size: 30px;
   }
 
   .interested__link {
