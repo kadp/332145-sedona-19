@@ -22,17 +22,18 @@
 @media (min-width: $tablet-width) {
   .travel {
     border-bottom: none;
+    margin-bottom: 70px;
   }
 
   .travel__title {
-    margin-top: 76px;
+    margin-top: 72px;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 26px;
   }
 
   .travel__text {
     margin: 0 161px;
-    margin-bottom: 75px;
+    line-height: 24px;
   }
 }
 

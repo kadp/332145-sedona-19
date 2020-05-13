@@ -26,3 +26,43 @@
 .video-controls__buttons path {
   fill: #5c6870;
 }
+
+@media (min-width: $tablet-width) {
+  .video-controls {
+    width: 100%;
+  }
+
+  .video-controls__scale {
+    position: relative;
+    width: 100%;
+    min-height: 93px;
+    margin-top: -95px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video-controls__buttons {
+    width: 100%;
+    min-height: 93px;
+    background-color: transparent;
+    position: absolute;
+    top: -96px;
+  }
+
+  .video-buttons__replay {
+    margin-right: auto;
+    margin-left: 35px;
+  }
+
+  .video-buttons__subtitles {
+    margin-left: auto;
+    margin-right: 33px;
+  }
+
+  .video-buttons__fullscreen {
+    margin-right: 40px;
+  }
+
+  .video-controls__buttons path {
+    fill: #ffffff;
+  }
+}
