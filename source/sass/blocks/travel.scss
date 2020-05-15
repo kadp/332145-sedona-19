@@ -38,16 +38,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .travel {
+    margin-bottom: 0;
+  }
+
   .travel__title {
-    margin-top: 113px;
+    margin-top: 108px;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 27px;
   }
 
   .travel__text {
     display: inline-block;
     text-align: center;
-    margin-bottom: 77px;
+    margin-bottom: 71px;
   }
 
   .travel__text span {

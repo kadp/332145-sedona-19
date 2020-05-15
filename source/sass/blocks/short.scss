@@ -84,4 +84,14 @@
   .short__title {
     margin: 0 98px;
   }
+
+  .short__item:nth-child(2) .short__description {
+    margin: 0 30px;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+  }
+
+  .short__list {
+    padding-bottom: 21px;
+  }
 }

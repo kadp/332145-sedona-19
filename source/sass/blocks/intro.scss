@@ -44,6 +44,7 @@
 
   .intro__text {
     margin-top: 28px;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -51,7 +52,11 @@
   .intro {
     margin-left: 355px;
     margin-right: 355px;
-    margin-top: 51px;
+    margin-top: 53px;
     margin-bottom: 55px;
+  }
+
+  .intro__text {
+    letter-spacing: 0.1px;
   }
 }

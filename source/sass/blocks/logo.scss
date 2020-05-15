@@ -31,3 +31,24 @@
     margin-top: -55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo__mountain {
+    margin-top: 2px;
+  }
+
+  .logo__city-of-sedona {
+    top: 22px;
+    transform: scale(1.8);
+    left: -1px;
+  }
+
+  .logo {
+    margin-top: -87px;
+  }
+
+  .mountain__sedona {
+    margin-top: 101px;
+    margin-bottom: 63px;
+  }
+}

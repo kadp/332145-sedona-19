@@ -49,6 +49,16 @@ img {
   display: flex;
 }
 
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2),
+      40px 0 15px 0 rgba(242, 242, 242, 1),
+      -40px 0 15px 0 rgba(242, 242, 242, 1);
+    margin: 0 auto;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

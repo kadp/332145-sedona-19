@@ -47,13 +47,14 @@
 @media (min-width: $desktop-width) {
   .presentation {
     width: $desktop-width;
+    margin-bottom: 93px;
   }
 
   .presentation__title {
-    margin-top: 72px;
+    margin-top: 67px;
   }
 
   .presentation__text {
-    margin-bottom: 76px;
+    margin-bottom: 72px;
   }
 }

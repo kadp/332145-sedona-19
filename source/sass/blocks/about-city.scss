@@ -182,15 +182,21 @@
 @media (min-width: $desktop-width) {
   .about-city__item {
     &--food::before {
-      left: 168px;
+      left: 161px;
     }
 
     &--home::before {
-      left: 164px;
+      left: 161px;
+      top: 56px;
     }
 
     &--souvenirs::before {
-      left: 156px;
+      left: 167px;
+      top: 56px;
     }
+  }
+
+  .about-city__list {
+    margin-bottom: 41px;
   }
 }
