@@ -14,3 +14,16 @@
 .copyright__link {
   margin-left: 11px;
 }
+
+.copyright__link:hover {
+  path {
+    fill: #81b3d2;
+  }
+}
+
+.copyright__link:active {
+  path {
+    fill: #000000;
+    fill-opacity: 0.3;
+  }
+}

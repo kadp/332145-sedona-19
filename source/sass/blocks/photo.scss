@@ -77,4 +77,8 @@
   .photo-cards__item:nth-child(1) {
     width: $desktop-width;
   }
+
+  .photo-cards__item {
+    margin: 0;
+  }
 }

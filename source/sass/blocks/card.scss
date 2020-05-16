@@ -150,12 +150,16 @@
 
 @media (min-width: $desktop-width) {
   .card__link {
-    margin-bottom: -80px;
+    margin-bottom: 0;
   }
 
   .card__wrapper {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 84px;
   }
 
   .card__count-like svg {
@@ -168,6 +172,10 @@
 
   .card__author {
     color: #ffffff;
+  }
+
+  .card__title {
+    margin-top: 20px;
   }
 
   .card:nth-of-type(1) {

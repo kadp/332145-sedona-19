@@ -58,16 +58,26 @@
 }
 
 .introduce__input {
-  border: none;
   background-color: #f2f2f2;
-  height: 56px;
-  padding-left: 22px;
+  height: 48px;
+  padding-left: 18px;
   flex-grow: 1;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
   line-height: 26px;
   width: 100%;
+  border: 4px solid #f2f2f2;
+}
+
+.introduce__input:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.introduce__input:focus {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
 }
 
 .introduce__input::placeholder {
@@ -301,6 +311,24 @@
   border-radius: 50%;
 }
 
+.places__input:checked:hover + .places__label::before,
+.places__input:not(:checked):hover + .places__label::before,
+.impression__input:not(:checked):hover + .impression__label::before,
+.impression__input:checked:hover + .impression__label::before {
+  background-color: #e5e5e5;
+}
+
+.places__input:checked:active + .places__label::before,
+.places__input:not(:checked):active + .places__label::before,
+.impression__input:not(:checked):active + .impression__label::before,
+.impression__input:checked:active + .impression__label::before {
+  background-color: #d5d5d5;
+}
+
+.impression__input:checked:active + .impression__label::before {
+  opacity: 0.3;
+}
+
 .places__input:checked + .places__label,
 .places__input:not(:checked) + .places__label {
   display: inline-block;
@@ -341,6 +369,10 @@
   height: 56px;
   background-color: #f2f2f2;
   opacity: 0.8;
+}
+
+.places__input:checked:active + .places__label::before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -414,7 +446,7 @@
       margin-top: 20px;
 
       .introduce__input {
-        padding-left: 24px;
+        padding-left: 20px;
       }
     }
   }
