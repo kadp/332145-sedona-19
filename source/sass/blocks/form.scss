@@ -68,6 +68,7 @@
   line-height: 26px;
   width: 100%;
   border: 4px solid #f2f2f2;
+  outline: none;
 }
 
 .introduce__input:hover {
@@ -326,7 +327,7 @@
 }
 
 .impression__input:checked:active + .impression__label::before {
-  opacity: 0.3;
+  background-image: url("../img/radio-opacity.svg");
 }
 
 .places__input:checked + .places__label,
