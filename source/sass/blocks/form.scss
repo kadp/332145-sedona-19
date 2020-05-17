@@ -292,12 +292,10 @@
   position: absolute;
   left: 0;
   top: -4px;
-  width: 56px;
-  height: 56px;
-  background-image: url("../img/radio.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f2f2f2;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border: 17px solid #f2f2f2;
   border-radius: 50%;
 }
 
@@ -306,28 +304,19 @@
   position: absolute;
   left: 0;
   top: -4px;
-  width: 56px;
-  height: 56px;
-  background-color: #f2f2f2;
+  border: 28px solid #f2f2f2;
   border-radius: 50%;
 }
 
-.places__input:checked:hover + .places__label::before,
-.places__input:not(:checked):hover + .places__label::before,
 .impression__input:not(:checked):hover + .impression__label::before,
 .impression__input:checked:hover + .impression__label::before {
-  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
-.places__input:checked:active + .places__label::before,
-.places__input:not(:checked):active + .places__label::before,
 .impression__input:not(:checked):active + .impression__label::before,
 .impression__input:checked:active + .impression__label::before {
-  background-color: #d5d5d5;
-}
-
-.impression__input:checked:active + .impression__label::before {
-  background-image: url("../img/radio-opacity.svg");
+  background-color: rgba(51, 51, 51, 0.3);
+  border-color: #d5d5d5;
 }
 
 .places__input:checked + .places__label,
@@ -353,12 +342,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f2f2f2;
-  opacity: 0.8;
-}
-
-.places__input:hover:checked + .places__label::before,
-.places__input:hover:not(:checked) + .places__label::before {
-  opacity: 1;
 }
 
 .places__input:not(:checked) + .places__label::before {
@@ -369,10 +352,16 @@
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
-  opacity: 0.8;
 }
 
-.places__input:checked:active + .places__label::before {
+.places__input:checked:hover + .places__label::before,
+.places__input:not(:checked):hover + .places__label::before {
+  background-color: #e5e5e5;
+}
+
+.places__input:checked:active + .places__label::before,
+.places__input:not(:checked):active + .places__label::before {
+  background-color: #d5d5d5;
   opacity: 0.3;
 }
 
