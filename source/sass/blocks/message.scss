@@ -6,8 +6,8 @@
   text-transform: uppercase;
   position: absolute;
   z-index: 30;
-  top: 1391px;
-  left: 33%;
+  top: 1320px;
+  left: 0;
   background: #ffffff;
 
   &__title {
@@ -54,12 +54,15 @@
 
 .message--send {
   display: none;
-  top: 940px;
+  top: 1647px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
   .message {
     width: 400px;
+    top: 1430px;
+    left: 184px;
 
     &__title {
       font-size: 30px;
@@ -96,5 +99,19 @@
 
   .message--send {
     width: 640px;
+    top: 1009px;
+    left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .message {
+    top: 1391px;
+    left: 400px;
+  }
+
+  .message--send {
+    top: 940px;
+    left: 279px;
   }
 }
