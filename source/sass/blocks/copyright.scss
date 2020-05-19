@@ -16,13 +16,13 @@
 }
 
 .copyright__link:hover {
-  path {
+  svg {
     fill: #81b3d2;
   }
 }
 
 .copyright__link:active {
-  path {
+  svg {
     fill: #000000;
     fill-opacity: 0.3;
   }

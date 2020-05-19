@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.social__link path {
+.social__link svg {
   fill: #ffffff;
 }
 
@@ -35,7 +35,7 @@
 .social__link:active {
   background-color: #5496bd;
 
-  path {
+  svg {
     fill-opacity: 0.3;
   }
 }

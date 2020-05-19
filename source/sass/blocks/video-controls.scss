@@ -23,21 +23,21 @@
   align-items: center;
 }
 
-.video-buttons__replay path,
-.video-buttons__subtitles path,
-.video-buttons__fullscreen path {
+.video-buttons__replay,
+.video-buttons__subtitles,
+.video-buttons__fullscreen {
   fill: #5c6870;
 }
 
-.video-buttons__replay:hover path,
-.video-buttons__subtitles:hover path,
-.video-buttons__fullscreen:hover path {
+.video-buttons__replay:hover,
+.video-buttons__subtitles:hover,
+.video-buttons__fullscreen:hover {
   fill: #333333;
 }
 
-.video-buttons__replay:active path,
-.video-buttons__subtitles:active path,
-.video-buttons__fullscreen:active path {
+.video-buttons__replay:active,
+.video-buttons__subtitles:active,
+.video-buttons__fullscreen:active {
   fill: #333333;
   fill-opacity: 0.3;
 }
@@ -77,28 +77,28 @@
     margin-right: 40px;
   }
 
-  .video-buttons__replay path,
-  .video-buttons__subtitles path,
-  .video-buttons__fullscreen path {
+  .video-buttons__replay,
+  .video-buttons__subtitles,
+  .video-buttons__fullscreen {
     fill: #ffffff;
   }
 
-  .video-buttons__replay:hover path,
-  .video-buttons__subtitles:hover path,
-  .video-buttons__fullscreen:hover path {
+  .video-buttons__replay:hover,
+  .video-buttons__subtitles:hover,
+  .video-buttons__fullscreen:hover {
     fill: #ffffff;
     fill-opacity: 0.6;
   }
 
-  .video-buttons__replay:active path,
-  .video-buttons__subtitles:active path,
-  .video-buttons__fullscreen:active path {
+  .video-buttons__replay:active,
+  .video-buttons__subtitles:active,
+  .video-buttons__fullscreen:active {
     fill: #ffffff;
     fill-opacity: 0.3;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .video-controls__buttons {
     top: -98px;
   }
