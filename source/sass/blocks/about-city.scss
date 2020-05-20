@@ -1,5 +1,6 @@
 .about-city {
   margin-bottom: 38px;
+  width: 320px;
 }
 
 .about-city__list {
@@ -82,6 +83,7 @@
 @media (min-width: $tablet-width) {
   .about-city {
     margin-bottom: 0;
+    width: $tablet-width;
   }
 
   .about-city__list {
@@ -198,5 +200,6 @@
 
   .about-city__list {
     margin-bottom: 41px;
+    width: $desktop-width;
   }
 }

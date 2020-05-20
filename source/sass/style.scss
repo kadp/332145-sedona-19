@@ -9,7 +9,7 @@
 @import "blocks/header.scss";
 @import "blocks/intro.scss";
 @import "blocks/interested.scss";
-@import "blocks/map-marker.scss";
+@import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/photo.scss";
 @import "blocks/card.scss";
@@ -59,7 +59,7 @@ img {
   }
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,6 +1,7 @@
 .short__list {
   text-align: center;
   background-color: #eeeeee;
+  width: 320px;
 }
 
 .short__item {
@@ -41,13 +42,14 @@
 .short__description {
   font-size: 14px;
   color: #333333;
-  line-height: 24px;
+  line-height: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .short__list {
     display: flex;
     align-items: baseline;
+    width: $tablet-width;
   }
 
   .short__description {
@@ -93,5 +95,6 @@
 
   .short__list {
     padding-bottom: 21px;
+    width: $desktop-width;
   }
 }

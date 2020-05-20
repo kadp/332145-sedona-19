@@ -20,6 +20,7 @@ $retina-dppx: 1.5dppx;
   background-color: #81b3d2;
   padding: 17px 0;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -31,9 +32,16 @@ $retina-dppx: 1.5dppx;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.disabled {
+
+.disabled:active {
   background-color: #e5e5e5;
 }
+
+.disabled,
+.disabled:hover {
+  background-color: #e5e5e5;
+}
+
 
 .no-js {
   display: none;

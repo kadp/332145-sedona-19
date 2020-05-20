@@ -21,12 +21,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .video-buttons__replay,
 .video-buttons__subtitles,
 .video-buttons__fullscreen {
   fill: #5c6870;
+  cursor: pointer;
+}
+
+.video-buttons {
+  position: relative;
 }
 
 .video-buttons__replay:hover,
@@ -60,7 +66,8 @@
     min-height: 93px;
     background-color: transparent;
     position: absolute;
-    top: -96px;
+    top: 1px;
+    margin-top: -95px;
   }
 
   .video-buttons__replay {
@@ -96,6 +103,10 @@
     fill: #ffffff;
     fill-opacity: 0.3;
   }
+
+  .video-buttons {
+    position: relative;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -113,5 +124,9 @@
 
   .video-buttons__fullscreen {
     margin-right: 42px;
+  }
+
+  .video-buttons {
+    position: relative;
   }
 }
