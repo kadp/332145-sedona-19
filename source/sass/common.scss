@@ -11,10 +11,6 @@ img {
   height: auto;
 }
 
-.hide {
-  display: none;
-}
-
 .show {
   display: block;
 }
@@ -46,4 +42,50 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list-style-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 17px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.disabled,
+.disabled:hover,
+.disabled:focus {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 1);
+}
+
+.disabled:active {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 1);
+}
+
+.no-js {
+  display: none;
 }

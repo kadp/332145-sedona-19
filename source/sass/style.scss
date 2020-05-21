@@ -1,8 +1,9 @@
 @charset "utf-8";
-@import "common.scss";
 @import "fonts.scss";
 @import "normalize.scss";
 @import "variables.scss";
+@import "blocks/main-nav.scss";
+@import "common.scss";
 @import "blocks/page-main.scss";
 @import "blocks/reason.scss";
 @import "blocks/about-city.scss";
@@ -20,7 +21,6 @@
 @import "blocks/mountain.scss";
 @import "blocks/logo.scss";
 @import "blocks/site-list.scss";
-@import "blocks/main-nav.scss";
 @import "blocks/page-footer-social.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
