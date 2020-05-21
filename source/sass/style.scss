@@ -49,6 +49,12 @@ img {
   display: block;
 }
 
+@media (min-width: $tablet-width) {
+  .show {
+    display: flex;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .wrapper {
     width: $desktop-width;

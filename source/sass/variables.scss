@@ -23,7 +23,8 @@ $retina-dppx: 1.5dppx;
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #669ec0;
 }
 
@@ -32,16 +33,15 @@ $retina-dppx: 1.5dppx;
   color: rgba(255, 255, 255, 0.3);
 }
 
+.disabled,
+.disabled:hover,
+.disabled:focus {
+  background-color: #e5e5e5;
+}
 
 .disabled:active {
   background-color: #e5e5e5;
 }
-
-.disabled,
-.disabled:hover {
-  background-color: #e5e5e5;
-}
-
 
 .no-js {
   display: none;

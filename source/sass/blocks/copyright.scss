@@ -13,17 +13,19 @@
 
 .copyright__link {
   margin-left: 11px;
+  pointer-events: auto;
+
+  svg {
+    pointer-events: none;
+  }
 }
 
-.copyright__link:hover {
-  svg {
-    fill: #81b3d2;
-  }
+.copyright__link:hover,
+.copyright__link:focus {
+  fill: #81b3d2;
 }
 
 .copyright__link:active {
-  svg {
-    fill: #000000;
-    fill-opacity: 0.3;
-  }
+  fill: #000000;
+  fill-opacity: 0.3;
 }

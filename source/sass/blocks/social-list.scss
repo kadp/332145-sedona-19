@@ -28,7 +28,8 @@
   fill: #ffffff;
 }
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   background-color: #669ec0;
 }
 

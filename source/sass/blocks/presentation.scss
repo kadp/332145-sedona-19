@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.presentation__video-player {
+  width: 100%;
+}
+
 .presentation__title {
   margin-top: 37px;
   font-size: 18px;
@@ -23,6 +27,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .presentation__video-player {
+    width: 648px;
+    margin: 0 auto;
+  }
+
   .presentation {
     width: $tablet-width;
     display: flex;
@@ -45,6 +54,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .presentation__video-player {
+    width: 800px;
+    margin: 0 auto;
+  }
+
   .presentation {
     width: $desktop-width;
     margin-bottom: 93px;
