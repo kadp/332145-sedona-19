@@ -37,10 +37,12 @@ $retina-dppx: 1.5dppx;
 .disabled:hover,
 .disabled:focus {
   background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 1);
 }
 
 .disabled:active {
   background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 1);
 }
 
 .no-js {
