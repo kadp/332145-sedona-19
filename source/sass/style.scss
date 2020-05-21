@@ -2,6 +2,7 @@
 @import "fonts.scss";
 @import "normalize.scss";
 @import "variables.scss";
+@import "common.scss";
 @import "blocks/page-main.scss";
 @import "blocks/reason.scss";
 @import "blocks/about-city.scss";
@@ -27,53 +28,3 @@
 @import "blocks/video-controls.scss";
 @import "blocks/travel.scss";
 @import "blocks/message.scss";
-
-body {
-  font-family: "PTSans", "Arial", sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-@media (min-width: $tablet-width) {
-  .show {
-    display: flex;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .wrapper {
-    width: $desktop-width;
-    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2),
-      40px 0 15px 0 rgba(242, 242, 242, 1),
-      -40px 0 15px 0 rgba(242, 242, 242, 1);
-    margin: 0 auto;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

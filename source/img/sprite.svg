@@ -38,7 +38,7 @@
   <symbol id="map-marker">
     <circle fill="#FFF" cx="13.5" cy="13.5" r="13.5"/><circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.36"/>
   </symbol>
-  <symbol id="reason-triangle" viewBox="0 12.452 320 37">
+  <symbol id="reason-triangle" viewBox="0 13 320 37">
     <path fill="#fff" d="M320 12.452H0v21.723l160 15.277 160-15.277z"/>
   </symbol>
   <symbol id="mountain__triangle" viewBox="440.469 30.889 320 26">
