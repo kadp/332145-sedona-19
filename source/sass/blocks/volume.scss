@@ -15,4 +15,31 @@
   left: 57px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .volume__scale {
+    width: 389px;
+    top: 45px;
+    left: 93px;
+  }
+
+  .volume__slider {
+    top: 41px;
+    left: 205px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .volume__scale {
+    width: 538px;
+    top: 44px;
+    left: 93px;
+  }
+
+  .volume__slider {
+    top: 41px;
+    left: 204px;
+  }
 }

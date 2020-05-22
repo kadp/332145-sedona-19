@@ -1,5 +1,6 @@
 .about-city {
-  margin-bottom: 45px;
+  margin-bottom: 38px;
+  width: 320px;
 }
 
 .about-city__list {
@@ -9,13 +10,13 @@
 .about-city__title {
   font-size: 18px;
   font-weight: 700;
-  margin-top: 41px;
 }
 
 .about-city__description {
   font-size: 14px;
   color: #333333;
   padding-right: 20px;
+  margin: 0;
 }
 
 .about-city__item {
@@ -33,8 +34,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     transform: scale(0.5);
-    top: -30px;
-    left: -75px;
+    top: -26px;
+    left: -70px;
   }
 
   &--home::before {
@@ -47,7 +48,7 @@
     background-position: 0 0;
     transform: scale(0.5);
     top: -30px;
-    left: -75px;
+    left: -67px;
   }
 
   &--souvenirs::before {
@@ -59,30 +60,91 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     transform: scale(0.5);
-    top: -30px;
-    left: -70px;
+    top: -33px;
+    left: -61px;
   }
+}
+
+.about-city__item:nth-child(1) {
+  line-height: 20px;
+  margin-top: 38px;
+}
+
+.about-city__item:nth-child(2) {
+  line-height: 20px;
+  margin-top: 34px;
+}
+
+.about-city__item:nth-child(3) {
+  line-height: 20px;
+  margin-top: 33px;
 }
 
 @media (min-width: $tablet-width) {
   .about-city {
     margin-bottom: 0;
+    width: $tablet-width;
   }
 
   .about-city__list {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 21px;
   }
 
   .about-city__title {
-    margin-top: 110px;
+    font-size: 21px;
   }
 
-  .about-city__description {
-    padding: 0;
+  .about-city__item:nth-child(1) {
+    margin-top: 4px;
+
+    .about-city__title {
+      margin-top: 119px;
+      margin-bottom: 24px;
+    }
+
+    .about-city__description {
+      line-height: 21px;
+      padding-right: 11px;
+      padding-left: 8px;
+    }
+  }
+
+  .about-city__item:nth-child(2) {
+    margin-top: 0;
+
+    .about-city__title {
+      margin-top: 123px;
+      margin-bottom: 24px;
+    }
+
+    .about-city__description {
+      line-height: 21px;
+      padding: 0;
+    }
+
+    .about-city__description span {
+      display: block;
+    }
+  }
+
+  .about-city__item:nth-child(3) {
+    margin-top: 0;
+
+    .about-city__title {
+      margin-top: 122px;
+      margin-bottom: 24px;
+    }
+
+    .about-city__description {
+      line-height: 21px;
+      padding: 0 10px;
+    }
   }
 
   .about-city__item {
+    width: 33%;
     margin-left: 0;
     text-align: center;
     padding: 40px 40px;
@@ -94,7 +156,7 @@
     &--food::before {
       transform: scale(1);
       top: 63px;
-      left: 92px;
+      left: 90px;
     }
 
     &--home {
@@ -104,7 +166,7 @@
     &--home::before {
       transform: scale(1);
       top: 57px;
-      left: 91px;
+      left: 90px;
     }
 
     &--souvenirs {
@@ -113,8 +175,8 @@
 
     &--souvenirs::before {
       transform: scale(1);
-      top: 60px;
-      left: 91px;
+      top: 58px;
+      left: 95px;
     }
   }
 }
@@ -122,15 +184,22 @@
 @media (min-width: $desktop-width) {
   .about-city__item {
     &--food::before {
-      left: 168px;
+      left: 161px;
     }
 
     &--home::before {
-      left: 164px;
+      left: 161px;
+      top: 56px;
     }
 
     &--souvenirs::before {
-      left: 156px;
+      left: 167px;
+      top: 56px;
     }
+  }
+
+  .about-city__list {
+    margin-bottom: 41px;
+    width: $desktop-width;
   }
 }

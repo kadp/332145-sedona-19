@@ -10,7 +10,7 @@
   position: relative;
   width: 280px;
   min-height: 45px;
-  margin-top: -49px;
+  margin-top: -48px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -21,8 +21,108 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
-.video-controls__buttons path {
+.video-buttons__replay,
+.video-buttons__subtitles,
+.video-buttons__fullscreen {
   fill: #5c6870;
+  cursor: pointer;
+}
+
+.video-buttons {
+  position: relative;
+}
+
+.video-buttons__replay:hover,
+.video-buttons__subtitles:hover,
+.video-buttons__fullscreen:hover {
+  fill: #333333;
+}
+
+.video-buttons__replay:active,
+.video-buttons__subtitles:active,
+.video-buttons__fullscreen:active {
+  fill: #333333;
+  fill-opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .video-controls {
+    width: 100%;
+  }
+
+  .video-controls__scale {
+    position: relative;
+    width: 100%;
+    min-height: 93px;
+    margin-top: -96px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video-controls__buttons {
+    width: 100%;
+    min-height: 93px;
+    background-color: transparent;
+    position: absolute;
+    top: 1px;
+    margin-top: -95px;
+  }
+
+  .video-buttons__replay {
+    margin-right: auto;
+    margin-left: 35px;
+  }
+
+  .video-buttons__subtitles {
+    margin-left: auto;
+    margin-right: 33px;
+  }
+
+  .video-buttons__fullscreen {
+    margin-right: 40px;
+  }
+
+  .video-buttons__replay,
+  .video-buttons__subtitles,
+  .video-buttons__fullscreen {
+    fill: #ffffff;
+  }
+
+  .video-buttons__replay:hover,
+  .video-buttons__subtitles:hover,
+  .video-buttons__fullscreen:hover {
+    fill: #ffffff;
+    fill-opacity: 0.6;
+  }
+
+  .video-buttons__replay:active,
+  .video-buttons__subtitles:active,
+  .video-buttons__fullscreen:active {
+    fill: #ffffff;
+    fill-opacity: 0.3;
+  }
+
+  .video-buttons {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-buttons__replay {
+    margin-left: 34px;
+  }
+
+  .video-buttons__subtitles {
+    margin-right: 32px;
+  }
+
+  .video-buttons__fullscreen {
+    margin-right: 42px;
+  }
+
+  .video-buttons {
+    position: relative;
+  }
 }

@@ -1,9 +1,14 @@
+.reason {
+  margin-bottom: -5px;
+}
+
 .reason img {
   display: block;
 }
 
 .reason__list {
   position: relative;
+  width: 320px;
 }
 
 .reason__item {
@@ -17,18 +22,25 @@
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .reason__number {
+  margin-top: -5px;
   font-size: 14px;
 }
 
 .reason__description {
+  margin-top: 3px;
   padding: 0 15px;
   display: inline-block;
   font-size: 14px;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
+  line-height: 21px;
+}
+
+.reason__wrapper:nth-of-type(3) .reason__description {
+  line-height: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,37 +62,84 @@
 
   .reason__list {
     display: flex;
-    align-items: center;
+    width: $tablet-width;
   }
 
   .reason__item:nth-child(2n + 1) {
-    width: 162px;
-    padding: 62px 47px;
-    line-height: 21px;
+    width: 256px;
   }
 
   .reason__item svg {
     display: none;
   }
 
-  .reason__title,
+  .reason__title {
+    font-size: 21px;
+    margin-top: 46px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    line-height: 26px;
+  }
+
+  .reason__title span {
+    display: block;
+  }
+
+  .reason__number {
+    margin-top: 12px;
+  }
+
   .reason__description {
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
+    margin-left: 29px;
+    margin-right: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reason__item:nth-child(2n + 1) {
-    width: 265px;
-    padding: 80px 68px;
+  .reason__list {
+    width: $desktop-width;
+  }
+
+  .reason__item:nth-child(1) {
+    width: 400px;
   }
 
   .reason__title {
-    margin: 0 50px;
+    margin: 0 95px;
+    margin-top: 52px;
   }
 
   .reason__title span {
     display: table;
+  }
+
+  .reason__description {
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-right: 55px;
+    padding: 0;
+  }
+
+  .reason__item:nth-child(2) {
+    width: 800px;
+    height: 256px;
+    overflow: hidden;
+
+    img {
+      top: -71px;
+      position: relative;
+    }
+  }
+
+  .reason__wrapper:nth-of-type(3) .reason__item:nth-child(2) {
+    img {
+      top: -76px;
+    }
+
+    .reason__description {
+      padding: 0 29px;
+    }
   }
 }

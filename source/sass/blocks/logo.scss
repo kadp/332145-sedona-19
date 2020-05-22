@@ -14,8 +14,9 @@
 
 .logo__menu {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  display: inline-block;
+  top: 17px;
+  right: 20px;
   width: 23px;
   height: 22px;
   fill: #81b3d2;
@@ -25,5 +26,30 @@
 @media (min-width: $tablet-width) {
   .logo__menu {
     display: none;
+  }
+
+  .logo {
+    margin-top: -55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__mountain {
+    margin-top: 2px;
+  }
+
+  .logo__city-of-sedona {
+    top: 54px;
+    left: 0;
+    transform: scale(1.8);
+  }
+
+  .logo {
+    margin-top: -87px;
+  }
+
+  .mountain__sedona {
+    margin-top: 132px;
+    margin-bottom: 63px;
   }
 }

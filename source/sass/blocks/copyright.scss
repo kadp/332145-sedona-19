@@ -8,8 +8,24 @@
 .copyright__text {
   font-size: 14px;
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .copyright__link {
   margin-left: 11px;
+  pointer-events: auto;
+
+  svg {
+    pointer-events: none;
+  }
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  fill: #81b3d2;
+}
+
+.copyright__link:active {
+  fill: #000000;
+  fill-opacity: 0.3;
 }

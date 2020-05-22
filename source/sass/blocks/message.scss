@@ -1,10 +1,17 @@
 .message {
+  display: none;
   text-align: center;
   width: 320px;
-  margin: 0 auto;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   text-transform: uppercase;
-  z-index: 10;
+  position: absolute;
+  z-index: 30;
+  background: #ffffff;
+  top: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 
   &__title {
     font-size: 18px;
@@ -42,15 +49,21 @@
     white-space: nowrap;
   }
 
-  &__button--ok {
+  &__button--error {
     padding: 17px 76px;
     margin-bottom: 35px;
   }
 }
 
+.message--send {
+  display: none;
+  top: 1647px;
+}
+
 @media (min-width: $tablet-width) {
   .message {
     width: 400px;
+    top: 1430px;
 
     &__title {
       font-size: 30px;
@@ -61,7 +74,7 @@
       margin-bottom: 6px;
     }
 
-    &__button--ok {
+    &__button--error {
       padding: 17px 123px;
       margin-bottom: 49px;
     }
@@ -87,5 +100,16 @@
 
   .message--send {
     width: 640px;
+    top: 1009px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .message {
+    top: 1391px;
+  }
+
+  .message--send {
+    top: 940px;
   }
 }

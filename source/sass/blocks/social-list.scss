@@ -24,8 +24,21 @@
   align-items: center;
 }
 
-.social__link path {
+.social__link svg {
   fill: #ffffff;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
+
+  svg {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,5 +48,6 @@
 
   .social {
     margin-bottom: 0;
+    margin-left: -9px;
   }
 }

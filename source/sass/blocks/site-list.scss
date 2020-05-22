@@ -1,3 +1,7 @@
+.site-list {
+  position: relative;
+}
+
 .site-list__link {
   background-color: #81b3d2;
   font-weight: 700;
@@ -10,24 +14,86 @@
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
+  line-height: 22px;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  background-color: #669ec0;
+}
+
+.site-list__link:active {
+  color: rgba(1, 1, 1, 0.2);
+  background-color: #5496bd;
 }
 
 .site-list__toggle {
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 19px;
   width: 23px;
   height: 23px;
   fill: #ffffff;
   cursor: pointer;
 }
 
+.site-list__item {
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.site-list__item:first-child {
+  border-top: none;
+}
+
+.site-list__item:last-child {
+  border-bottom: none;
+}
+
+.site-list__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 7px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
+  .site-list__link:hover,
+  .site-list__link:focus {
+    color: #81b3d2;
+    background-color: transparent;
+  }
+
+  .site-list__link:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+
   .site-list {
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
-    width: 100%;
+  }
+
+  .site-list__item:nth-child(1) {
+    margin-left: 49px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 77px;
+    margin-right: auto;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+  .site-list__item:nth-child(4) {
+    margin-right: 28px;
   }
 
   .site-list__link {
@@ -40,5 +106,39 @@
     align-items: center;
     cursor: pointer;
     text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .site-list__toggle {
+    display: none;
+  }
+
+  .site-list__item {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .site-list__item::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item:nth-child(1) {
+    margin-left: 91px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 162px;
+    margin-right: auto;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+    margin-right: 139px;
+  }
+
+  .site-list__item:nth-child(4) {
+    margin-right: 71px;
   }
 }

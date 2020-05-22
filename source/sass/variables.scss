@@ -1,22 +1,4 @@
 $tablet-width: 768px;
-
 $desktop-width: 1200px;
-
-.list-style-reset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.button {
-  display: inline-block;
-  vertical-align: middle;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 21px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
-  padding: 15px 0;
-  border: none;
-}
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
