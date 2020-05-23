@@ -9,15 +9,18 @@
 </head>
 
 <body>
+  <div class="hide">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list list-style-reset">
-            <li class="site-list__item site-list__item--close">
+          <ul class="main-nav__list site-list list-style-reset main-nav__list--open">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
               <div class="site-list__toggle no-js">
-                <svg  width="22" height="22"><use xlink:href="img/sprite.svg#toggle"></use></svg>
+                <svg width="22" height="22"><use xlink:href="img/sprite.svg#toggle"></use></svg>
               </div>
             </li>
             <li class="site-list__item">
@@ -59,16 +62,15 @@
               <h3 class="introduce__title">Представьтесь:</h3>
               <div class="introduce__wrapper">
                 <label class="introduce__label" for="first-name">Имя*:</label>
-                <input class="introduce__input" id="first-name" type="text" name="firstName" placeholder="Петр" required>
+                <input class="introduce__input" id="first-name" type="text" name="firstName" placeholder="Петр" required="">
               </div>
               <div class="introduce__wrapper">
                 <label class="introduce__label" for="last-name">Фамилия*:</label>
-                <input class="introduce__input" id="last-name" type="text" name="lastName" placeholder="Иванов" required>
+                <input class="introduce__input" id="last-name" type="text" name="lastName" placeholder="Иванов" required="">
               </div>
               <div class="introduce__wrapper">
                 <label class="introduce__label" for="middle-name">Отчество:</label>
-                <input class="introduce__input" id="middle-name" type="text" name="middleName"
-                  placeholder="Александрович">
+                <input class="introduce__input" id="middle-name" type="text" name="middleName" placeholder="Александрович">
               </div>
             </div>
             <div class="review__contacts contacts">
@@ -76,7 +78,7 @@
               <div class="contacts__wrapper">
                 <label class="contacts__label" for="tel"><span>Контактный </span>телефон*:</label>
                 <div class="contacts__wrapper-input">
-                  <input class="contacts__input" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                  <input class="contacts__input" id="tel" type="tel" name="tel" placeholder="Введите телефон" required="">
                   <div class="contacts__input-button">
                     <svg width="18" height="18"><use xlink:href="img/sprite.svg#phone-icon"></use></svg>
                   </div>
@@ -85,7 +87,7 @@
               <div class="contacts__wrapper">
                 <label class="contacts__label" for="email">Электронная почта*:</label>
                 <div class="contacts__wrapper-input">
-                  <input class="contacts__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                  <input class="contacts__input" id="email" type="email" name="email" placeholder="Введите e-mail" required="">
                   <div class="contacts__input-button">
                     <svg width="16" height="16"><use xlink:href="img/sprite.svg#mail-icon"></use></svg>
                   </div>
@@ -95,7 +97,7 @@
             <div class="review__impression impression">
               <h3 class="impression__title">Ваше общее впечатление:</h3>
               <div class="impression__wrapper">
-                <input class="impression__input" type="radio" id="pozitive" name="impression" value="pozitive" checked>
+                <input class="impression__input" type="radio" id="pozitive" name="impression" value="pozitive" checked="">
                 <label class="impression__label" for="pozitive">Скорее положительное</label>
               </div>
               <div class="impression__wrapper">
@@ -110,15 +112,15 @@
             <div class="review__places places">
               <h3 class="places__title">Посещенные достопримечательности:</h3>
               <div class="places__wrapper">
-                <input class="places__input" type="checkbox" id="bridge-devil" name="places" value="Мост-Дьявола" checked>
+                <input class="places__input" type="checkbox" id="bridge-devil" name="places" value="Мост-Дьявола" checked="">
                 <label class="places__label" for="bridge-devil">Мост Дьявола</label>
               </div>
               <div class="places__wrapper">
-                <input class="places__input" type="checkbox" id="mountain-bell" name="places" value="Гора-Колокол" checked>
+                <input class="places__input" type="checkbox" id="mountain-bell" name="places" value="Гора-Колокол" checked="">
                 <label class="places__label" for="mountain-bell">Гора-Колокол</label>
               </div>
               <div class="places__wrapper">
-                <input class="places__input" type="checkbox" id="slide-park" name="places" value="Слайд-парк" checked>
+                <input class="places__input" type="checkbox" id="slide-park" name="places" value="Слайд-парк" checked="">
                 <label class="places__label" for="slide-park">Слайд-парк</label>
               </div>
               <div class="places__wrapper">
@@ -133,8 +135,8 @@
                 <textarea class="emotions__textarea" id="emotions-textarea" name="emotions-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
-            <button class="review__button button disabled" type="submit" disabled>Отправить отзыв</button>
-            <span class=review__required><span>*</span> &#8211; Обязательные поля</span>
+            <button class="review__button button disabled" type="submit" disabled="">Отправить отзыв</button>
+            <span class="review__required"><span>*</span> &#8211; Обязательные поля</span>
           </form>
         </div>
       </section>
@@ -153,7 +155,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
-              <svg role="img" width="9" height="19" ><use xlink:href="img/sprite.svg#social-facebook"></use></svg>
+              <svg role="img" width="9" height="19"><use xlink:href="img/sprite.svg#social-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
