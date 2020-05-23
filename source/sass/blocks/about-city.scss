@@ -123,10 +123,10 @@
       line-height: 21px;
       padding: 0;
     }
+  }
 
-    .about-city__description span {
-      display: block;
-    }
+  .about-city__description span {
+    display: block;
   }
 
   .about-city__item:nth-child(3) {
@@ -199,7 +199,7 @@
   }
 
   .about-city__list {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     width: $desktop-width;
   }
 }

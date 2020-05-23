@@ -5,19 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="hide">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list list-style-reset show">
-            <li class="site-list__item site-list__item--close">
+          <ul class="main-nav__list site-list list-style-reset main-nav__list--open">
+            <li class="site-list__item">
               <a class="site-list__link">Главная</a>
               <div class="site-list__toggle no-js">
-                <svg  width="22.2px" height="22.2px"><use xlink:href="img/sprite.svg#toggle"></use></svg>
+                <svg  width="22" height="22"><use xlink:href="img/sprite.svg#toggle"></use></svg>
               </div>
             </li>
             <li class="site-list__item">
@@ -39,7 +42,7 @@
           <img class="logo__city-of-sedona" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Седона">
         </picture>
         <div class="logo__menu no-js">
-          <svg width="22.93" height="21.98"><use xlink:href="img/sprite.svg#menu-logo"></use></svg>
+          <svg width="23" height="22"><use xlink:href="img/sprite.svg#menu-logo"></use></svg>
         </div>
         <div class="logo__mountain mountain mountain--main-page">
           <svg class="mountain__welcome mountain__welcome--main" width="460" height="350"><use xlink:href="img/sedona-logo.svg#main-logo-sedona"></use></svg>
@@ -166,17 +169,17 @@
         <ul class="social__list list-style-reset">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в Твиттере">
-              <svg role="img" width="17.5" height="14.66"><use xlink:href="img/sprite.svg#social-twitter"></use></svg>
+              <svg role="img" width="17" height="15"><use xlink:href="img/sprite.svg#social-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
-              <svg role="img" width="8.67" height="18.94" ><use xlink:href="img/sprite.svg#social-facebook"></use></svg>
+              <svg role="img" width="9" height="19" ><use xlink:href="img/sprite.svg#social-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в Ютубе">
-              <svg role="img" width="19.98" height="14.02"><use xlink:href="img/sprite.svg#social-youtube"></use></svg>
+              <svg role="img" width="20" height="14"><use xlink:href="img/sprite.svg#social-youtube"></use></svg>
             </a>
           </li>
         </ul>
@@ -184,17 +187,17 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-          <svg role="img" width="26.94" height="34.09"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+          <svg role="img" width="27" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
         </a>
       </div>
     </footer>
   </div>
 
+  <script src="js/popup.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   <script src="js/picturefill.js"></script>
-
 </body>
 
 </html>

@@ -84,11 +84,11 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2400px auto;
     }
+  }
 
-    &__triangle {
-      min-height: 57px;
-      width: 1200px;
-      background-image: url("../img/bg-intro-triangle-desktop.svg");
-    }
+  .mountain__triangle {
+    min-height: 57px;
+    width: 1200px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }

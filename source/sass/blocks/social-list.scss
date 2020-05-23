@@ -44,10 +44,17 @@
 @media (min-width: $tablet-width) {
   .social__list {
     justify-content: center;
+    margin-top: 26px;
   }
 
   .social {
     margin-bottom: 0;
     margin-left: -9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-top: 26px;
   }
 }
