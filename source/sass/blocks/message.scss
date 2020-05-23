@@ -12,47 +12,47 @@
   margin-right: auto;
   left: 0;
   right: 0;
+}
 
-  &__title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 38px;
-    display: inline-block;
-    line-height: 28px;
-    margin-bottom: 6px;
-  }
+.message__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 38px;
+  display: inline-block;
+  line-height: 28px;
+  margin-bottom: 6px;
+}
 
-  &__text {
-    font-size: 14px;
-    margin-left: 56px;
-    margin-right: 57px;
-    margin-bottom: 29px;
-    line-height: 24px;
-  }
+.message__text {
+  font-size: 14px;
+  margin-left: 56px;
+  margin-right: 57px;
+  margin-bottom: 29px;
+  line-height: 24px;
+}
 
-  &__text--send {
-    font-size: 14px;
-    margin-top: 20px;
-    margin-left: 54px;
-    margin-right: 54px;
-    margin-bottom: 37px;
-    line-height: 24px;
-  }
+.message__text--send {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 54px;
+  margin-right: 54px;
+  margin-bottom: 37px;
+  line-height: 24px;
+}
 
-  &__wrapper {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.message__wrapper {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-  &__button {
-    padding: 17px 66px;
-    white-space: nowrap;
-  }
+.message__button {
+  padding: 17px 66px;
+  white-space: nowrap;
+}
 
-  &__button--error {
-    padding: 17px 76px;
-    margin-bottom: 35px;
-  }
+.message__button--error {
+  padding: 17px 76px;
+  margin-bottom: 35px;
 }
 
 .message--send {
@@ -64,38 +64,38 @@
   .message {
     width: 400px;
     top: 1430px;
+  }
 
-    &__title {
-      font-size: 30px;
-      margin-top: 53px;
-      line-height: 40px;
-      margin-right: 75px;
-      margin-left: 75px;
-      margin-bottom: 6px;
-    }
+  .message__title {
+    font-size: 30px;
+    margin-top: 53px;
+    line-height: 40px;
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 6px;
+  }
 
-    &__button--error {
-      padding: 17px 123px;
-      margin-bottom: 49px;
-    }
+  .message__button--error {
+    padding: 17px 123px;
+    margin-bottom: 49px;
+  }
 
-    &__text {
-      margin-bottom: 39px;
-    }
+  .message__text {
+    margin-bottom: 39px;
+  }
 
-    &__text--send {
-      margin-left: 110px;
-      margin-right: 110px;
-      margin-bottom: 34px;
-    }
+  .message__text--send {
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 34px;
+  }
 
-    &__wrapper {
-      padding: 44px 91px;
-    }
+  .message__wrapper {
+    padding: 44px 91px;
+  }
 
-    &__button {
-      padding: 17px 155px;
-    }
+  .message__button {
+    padding: 17px 155px;
   }
 
   .message--send {
