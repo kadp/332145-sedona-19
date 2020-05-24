@@ -83,9 +83,9 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    //    .pipe(posthtml([
-    //      include()
-    //    ]))
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 });
 
@@ -104,7 +104,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("minify", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
