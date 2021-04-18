@@ -1,3 +1,3 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+Личный проект «Седона»
 
 https://kadp.github.io/332145-sedona-19/source/
